@@ -1,0 +1,15 @@
+STORE "Count" WITH ANY VALUE 
+STORE "I" WITH 1
+
+WHILE I < Count THEN  
+    ADD BY 1
+    ELSE IF VALUE I mod 3 = 0 AND I mod 5 = 0 THEN
+        DISPLAY FizzBuzz
+    ELSE IF VALUE I mod 3 = 0 THEN 
+        DISPLAY Fizz
+    ELSE IF VALUE I mod 5 = 0 THEN
+        DISPLAY Buzz
+    ELSE  
+        DISPLAY
+    END IF
+END WHILE

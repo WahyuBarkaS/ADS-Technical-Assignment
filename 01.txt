@@ -1,0 +1,13 @@
+INPUT temperatur (86)
+INPUT tipe (fahrenheit)
+
+IF tipe IS "fahrenheit" THEN 
+    SET hasil = (temperatur - 32) * (5/9)
+    DISPLAY hasil
+ELSE IF tipe IS "kelvin" THEN 
+    SET hasil = (temperatur - 273.15)
+    DISPLAY hasil
+ELSE tipe IS "celcius" THEN
+    SET hasil = temperatur
+    DISPLAY hasil
+ENDIF

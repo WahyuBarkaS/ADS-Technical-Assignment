@@ -1,0 +1,14 @@
+STORE INTEGER "x" 
+STORE "Angka" 
+STORE "Hasil"
+
+SET "Angka" with "x" mod 5
+IF "x" > 0 AND "x" <= 67
+    THEN DISPLAY "Hasil"
+ELSE IF "x" >= 68 AND "x" <= 100 AND "Angka" == 0
+    THEN DISPLAY "x"
+ELSE IF "x" >= 68 AND "x" < 100 AND "Angka" == 3
+    THEN DISPLAY "Hasil"
+ELSE IF "x" >= 68 AND "x" < 100 AND "Angka" == 1
+    THEN DISPLAY "x" + 1
+END IF

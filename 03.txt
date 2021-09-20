@@ -1,0 +1,13 @@
+STORE "Kata" with STRING VALUE
+STORE "Sambung" = VALUE FROM Kata SPLIT STRING to ARRAY
+THEN JOIN 
+
+STORE "Balik" with "Sambung"
+THEN SPLIT STRING to ARRAY
+REVERSE JOIN 
+
+IF "Kata" = "Balik"
+    THEN TRUE
+ELSE 
+    FALSE
+END IF
